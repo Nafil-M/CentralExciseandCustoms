@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Central Excise and Customs</string>
+    <string name="noReportAvailable">"No reports available in this date. "</string>
+    <string name="official_details">Official Details</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="central_exsise_and_customs">Central Exsise and Customs</string>
+</resources>
