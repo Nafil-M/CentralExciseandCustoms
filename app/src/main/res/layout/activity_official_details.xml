@@ -1142,15 +1142,16 @@
 
     <TextView
         android:id="@+id/uploadofficial"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@id/permenantstate"
         android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/bg2"
         android:fontFamily="@font/lorin_bold"
         android:gravity="center"
         android:text="UPDATE"
+        android:layout_marginBottom="25dp"
         android:textColor="@color/white" />
 
     </RelativeLayout>
