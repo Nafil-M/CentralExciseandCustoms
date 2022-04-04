@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
-        android:background="@color/light"
+        android:background="@color/colorText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,7 +23,7 @@
             android:layout_marginStart="12dp"
             android:fontFamily="@font/lorin_bold"
             android:text="@string/official_details"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/back_icon_top_orders_driver"
@@ -73,7 +73,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
-            android:text="Employee ID"
+            android:text="Code"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
@@ -107,7 +108,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
-            android:text="Date of Joining"
+            android:text="Email"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
@@ -139,7 +141,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
-                android:text="Work Place"
+                android:text="First Name"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <EditText
@@ -171,7 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
-            android:text="Start Date"
+            android:text="Middle Name"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
@@ -202,7 +206,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
-            android:text="Releave Date"
+            android:text="Last Name"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
@@ -233,7 +238,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
-                android:text="Designation"
+                android:text="Mobile"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <EditText
@@ -265,7 +271,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
-                android:text="Location"
+                android:text="Designation"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <EditText
@@ -282,108 +289,869 @@
 
 
 
+        <RelativeLayout
+            android:id="@+id/zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Zone"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zoneet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/zone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Zone comm."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zone2et"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zone2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Division"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/divet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/division"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Range"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/rangeet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/range"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/categet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cadre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Cadre"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/cadreet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cadre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Date Of Birth"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/dobet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/doj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Date Of Joining"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/dojet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/dor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doj"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Date Of Retirement"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/doret"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/disability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Disability"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/disabilityet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disability"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Education"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eduet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/workexp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/education"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Work Experience"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/workexpet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hometown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workexp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Home Town"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/hometet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/homedist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hometown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Home District"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/hodistet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/residaddress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homedist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Residential Address 1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/resadd1et"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/residaddress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/residaddress1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Residential Address 2"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/resadd2et"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/residdist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/residaddress2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Residential District"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/residdistet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/residpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/residdist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Residential Pin"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/residpinet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/residcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/residpin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Residential City"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/residcityet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/residstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/residcity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Residential State"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/residstateet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/permenantaddrss1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/residstate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Permenant Address 1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/permenantaddrss1et"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/permenantaddrss2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permenantaddrss1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Permenant Address 2"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/permenantaddrss2et"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/permenantdist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permenantaddrss2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Permenant District"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/permenantdistet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/permenantpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permenantdist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Permenant Pin"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/permenantpinet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/permenantcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permenantpin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Permenant City"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/permenantcityet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/permenantstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permenantcity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuu36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Permenant State"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/permenantstateet"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+
+
+
     <TextView
         android:id="@+id/uploadofficial"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_below="@id/location"
+        android:layout_below="@id/permenantstate"
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
-        android:background="@drawable/btn_background"
+        android:background="@drawable/bg2"
         android:fontFamily="@font/lorin_bold"
         android:gravity="center"
         android:text="UPDATE"
         android:textColor="@color/white" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/uploadofficial"
-        android:orientation="vertical">
-
-    <LinearLayout
-        android:id="@+id/heading"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:weightSum="10"
-        android:background="@drawable/rounded_top_blue_lowradius">
-
-        <TextView
-            android:id="@+id/id"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:fontFamily="@font/lorin_bold"
-            android:layout_weight="3.5"
-            android:text="Start Date"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightGreyBackground" />
-
-        <TextView
-            android:id="@+id/mop"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:fontFamily="@font/lorin_bold"
-            android:text="End Date"
-            android:layout_weight="4"
-            android:lineSpacingExtra="4dp"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:background="@color/lightGreyBackground" />
-
-        <TextView
-            android:id="@+id/amt"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/lorin_bold"
-            android:text="Location"
-            android:textColor="@color/white"
-            android:layout_weight="2.5"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="15dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/noData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/noReportAvailable"
-        android:layout_gravity="center"
-        android:textSize="13sp"
-        android:visibility="gone"
-        android:fontFamily="@font/lorin_light"
-        android:gravity="center"
-        android:paddingTop="40dp"
-        android:paddingBottom="40dp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:paddingBottom="10dp"
-        android:overScrollMode="never"
-        android:background="@drawable/cash_report_table" />
-
-    </LinearLayout>
 
     </RelativeLayout>
     </androidx.core.widget.NestedScrollView>

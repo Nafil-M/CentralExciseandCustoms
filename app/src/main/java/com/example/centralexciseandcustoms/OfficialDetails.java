@@ -17,8 +17,8 @@ public class OfficialDetails extends AppCompatActivity {
     EditText empid,workplace,dateofj,startdate,enddate,designation;
     TextView uploadbtn;
     String id,place,dateofjo,start,end,des;
-    OfficialDetailsAdapter officialDetailsAdapter;
-    RecyclerView recyclerView;
+//    OfficialDetailsAdapter officialDetailsAdapter;
+//    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +32,12 @@ public class OfficialDetails extends AppCompatActivity {
         startdate = findViewById(R.id.startdateedit);
         enddate = findViewById(R.id.enddateedit);
         designation = findViewById(R.id.desigedit);
-        recyclerView = findViewById(R.id.recyclerview);
-        officialDetailsAdapter = new OfficialDetailsAdapter(this);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(officialDetailsAdapter);
+//        recyclerView = findViewById(R.id.recyclerview);
+//        officialDetailsAdapter = new OfficialDetailsAdapter(this);
+//
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
+//        recyclerView.setHasFixedSize(true);
+//        recyclerView.setAdapter(officialDetailsAdapter);
 
 
         uploadbtn.setOnClickListener(new View.OnClickListener() {
