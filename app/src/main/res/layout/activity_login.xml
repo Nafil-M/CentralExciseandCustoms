@@ -23,12 +23,12 @@
 
             <TextView
                 android:id="@+id/uuu"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Username"
-                android:fontFamily="@font/lorin_regular"
                 android:layout_centerVertical="true"
-                android:textSize="20sp"/>
+                android:fontFamily="@font/lorin_regular"
+                android:text="Username"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/edittext"
@@ -57,12 +57,12 @@
 
             <TextView
                 android:id="@+id/uuu2"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:text="Password"
                 android:fontFamily="@font/lorin_regular"
-                android:textSize="20sp" />
+                android:text="Password"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/edittext2"
@@ -95,8 +95,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
-            android:text="Remember Me"
             android:fontFamily="@font/lorin_regular"
+            android:text="Remember Me"
             android:textStyle="bold" />
 
         <TextView

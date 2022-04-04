@@ -5,4 +5,10 @@
     <string name="personal_details">Personal Details</string>
     <string name="central_exsise_and_customs">Central Exsise and Customs</string>
     <string name="login">LOGIN</string>
+    <string name="officer">OFFICER</string>
+    <string name="personal">PERSONAL</string>
+    <string name="posting">POSTING</string>
+    <string name="training">TRAINING</string>
+    <string name="promotion">PROMOTION</string>
+    <string name="awards">AWARDS</string>
 </resources>
