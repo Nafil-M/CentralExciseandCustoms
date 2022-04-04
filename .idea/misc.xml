@@ -4,11 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/all_side_curved_color.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/awards.xml" value="0.1205" />
+        <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/bg2.xml" value="0.1205" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/btn_background.xml" value="0.21388888888888888" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/cash_report_table.xml" value="0.21388888888888888" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/ic_arrow_back.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/ic_baseline_add_task_24.xml" value="0.1205" />
+        <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1205" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/ic_person_black_24dp.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/personal.xml" value="0.1205" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/rounded_top_blue_lowradius.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/drawable/training.xml" value="0.1205" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/New/AndroidStudioProjects/CentralExciseandCustoms/app/src/main/res/layout/activity_official_details.xml" value="0.20416666666666666" />

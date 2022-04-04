@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/light"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -10,8 +11,8 @@
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/light"
+        android:layout_marginTop="15dp"
+        android:background="@color/lightcolor"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,41 +31,263 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/pd"
-        android:layout_width="300dp"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/all_side_curved_color"
-        android:fontFamily="@font/lorin_regular"
-        android:gravity="center"
-        android:paddingLeft="45dp"
-        android:paddingTop="10dp"
-        android:paddingRight="45dp"
-        android:paddingBottom="10dp"
-        android:text="Personal Details"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:layout_below="@+id/appbar"
+        android:clipToPadding="false"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
 
-    <TextView
-        android:id="@+id/od"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pd"
-        android:layout_centerHorizontal="true"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/all_side_curved_color"
-        android:fontFamily="@font/lorin_regular"
-        android:gravity="center"
-        android:paddingLeft="45dp"
-        android:paddingTop="10dp"
-        android:paddingRight="45dp"
-        android:paddingBottom="10dp"
-        android:text="Official Details"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/officerlyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:background="@drawable/bg2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgofficer"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_baseline_person_outline_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgofficer"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lorin_regular"
+                    android:gravity="center"
+                    android:text="Officer"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/personallyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgpersonal"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/personal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgpersonal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lorin_regular"
+                    android:gravity="center"
+                    android:text="Personal"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/postinglyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:background="@drawable/bg2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgposting"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_baseline_add_task_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgposting"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lorin_regular"
+                    android:gravity="center"
+                    android:text="Posting"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/traininglyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgtraining"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/training" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgtraining"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lorin_regular"
+                    android:gravity="center"
+                    android:text="Training"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/promotionlyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:background="@drawable/bg2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgpromotion"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_baseline_edit_calendar_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgpromotion"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lorin_regular"
+                    android:gravity="center"
+                    android:text="Promotion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/awardslyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgawards"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/awards" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgawards"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lorin_regular"
+                    android:gravity="center"
+                    android:text="Awards"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

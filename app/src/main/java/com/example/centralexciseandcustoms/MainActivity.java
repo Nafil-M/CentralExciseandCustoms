@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView PD,OD;
+    LinearLayout officer,personal,posting,training,promotion,awards;
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
@@ -20,21 +21,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        PD = findViewById(R.id.pd);
-        OD = findViewById(R.id.od);
+        officer = findViewById(R.id.officerlyt);
+        personal = findViewById(R.id.personallyt);
+        posting = findViewById(R.id.postinglyt);
+        training = findViewById(R.id.traininglyt);
+        promotion = findViewById(R.id.promotionlyt);
+        awards = findViewById(R.id.awardslyt);
 
-        PD.setOnClickListener(new View.OnClickListener() {
+        officer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,PersonalDetailssActivity.class);
+                Intent intent = new Intent(MainActivity.this,OfficialDetails.class);
                 startActivity(intent);
             }
         });
 
-        OD.setOnClickListener(new View.OnClickListener() {
+        personal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentt = new Intent(MainActivity.this,OfficialDetails.class);
+                Intent intentt = new Intent(MainActivity.this,PersonalDetailssActivity.class);
                 startActivity(intentt);
             }
         });
