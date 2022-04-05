@@ -69,20 +69,20 @@
 
         <TextView
             android:id="@+id/uuuu"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
             android:text="Code"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/codeedit"
-            android:layout_width="200dp"
             android:layout_height="45dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@id/uuuu"
+            android:layout_marginStart="15dp"
             android:background="@drawable/all_side_curved_white"
             android:fontFamily="@font/lorin_regular"
             android:paddingStart="10dp" />
@@ -99,25 +99,26 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_below="@+id/code"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true">
 
         <TextView
             android:id="@+id/uuu6"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
             android:text="Email"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/emailedit"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@id/uuu6"
+            android:layout_marginStart="15dp"
             android:layout_height="45dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
+            android:inputType="textEmailAddress"
             android:background="@drawable/all_side_curved_white"
             android:fontFamily="@font/lorin_regular"
             android:paddingStart="10dp" />
@@ -132,25 +133,25 @@
             android:layout_below="@+id/email"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu5"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="First Name"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/firstnameedit"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu5"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -165,25 +166,25 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_below="@+id/firstname"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true">
 
         <TextView
             android:id="@+id/uuu7"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
             android:text="Middle Name"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/middlenameedit"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@id/uuu7"
+            android:layout_marginStart="15dp"
             android:layout_height="45dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
             android:background="@drawable/all_side_curved_white"
             android:fontFamily="@font/lorin_regular"
             android:paddingStart="10dp" />
@@ -197,25 +198,25 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_below="@+id/middlename"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true">
 
         <TextView
             android:id="@+id/uuu8"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/lorin_regular"
             android:text="Last Name"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/lastnameedit"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@id/uuu8"
+            android:layout_marginStart="15dp"
             android:layout_height="45dp"
-            android:layout_marginStart="30dp"
-            android:layout_alignParentEnd="true"
             android:background="@drawable/all_side_curved_white"
             android:fontFamily="@font/lorin_regular"
             android:paddingStart="10dp" />
@@ -229,25 +230,27 @@
             android:layout_below="@+id/lastname"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu9"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Mobile"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/mobileedit"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu9"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:inputType="number"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -262,12 +265,12 @@
             android:layout_below="@+id/mobile"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu10"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
@@ -276,7 +279,9 @@
                 android:textSize="16sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu10"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -303,21 +308,23 @@
             android:layout_below="@+id/designation"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu11"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Zone"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu11"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -338,26 +345,28 @@
 
         <RelativeLayout
             android:id="@+id/zone2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/zone"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu12"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Zone comm."
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu12"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -378,12 +387,12 @@
 
         <RelativeLayout
             android:id="@+id/division"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/zone2"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
@@ -394,10 +403,12 @@
                 android:fontFamily="@font/lorin_regular"
                 android:text="Division"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu13"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -422,21 +433,23 @@
             android:layout_below="@+id/division"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu14"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Range"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu14"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -461,21 +474,23 @@
             android:layout_below="@+id/range"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu15"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Category"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu15"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -501,21 +516,23 @@
             android:layout_below="@+id/category"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu16"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Cadre"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu16"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -541,25 +558,26 @@
             android:layout_below="@+id/cadre"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu17"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Date Of Birth"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/dobet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu17"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:inputType="date"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -573,25 +591,26 @@
             android:layout_below="@+id/dob"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu18"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Date Of Joining"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/dojet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu18"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -606,25 +625,25 @@
             android:layout_below="@+id/doj"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu19"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Date Of Retirement"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/doret"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu19"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -639,21 +658,23 @@
             android:layout_below="@+id/dor"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu20"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Disability"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu20"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
@@ -679,25 +700,25 @@
             android:layout_below="@+id/disability"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu21"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Education"
+                android:layout_centerVertical="true"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/eduet"
-                android:layout_width="200dp"
-                android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu21"
+                android:layout_marginStart="15dp"
+                android:layout_height="90dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -711,25 +732,25 @@
             android:layout_below="@+id/education"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu22"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Work Experience"
+                android:layout_centerVertical="true"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/workexpet"
-                android:layout_width="200dp"
-                android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu22"
+                android:layout_marginStart="15dp"
+                android:layout_height="90dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -743,25 +764,25 @@
             android:layout_below="@+id/workexp"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu23"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Home Town"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/hometet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu23"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -776,25 +797,25 @@
             android:layout_below="@+id/hometown"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu24"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Home District"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/hodistet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu24"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -809,25 +830,26 @@
             android:layout_below="@+id/homedist"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu25"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Residential Address 1"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/resadd1et"
-                android:layout_width="200dp"
-                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu25"
+                android:layout_marginStart="15dp"
+                android:layout_height="90dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -842,25 +864,26 @@
             android:layout_below="@+id/residaddress1"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu26"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Residential Address 2"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/resadd2et"
-                android:layout_width="200dp"
-                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu26"
+                android:layout_marginStart="15dp"
+                android:layout_height="90dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -875,25 +898,26 @@
             android:layout_below="@+id/residaddress2"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu27"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Residential District"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/residdistet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu27"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -908,25 +932,26 @@
             android:layout_below="@+id/residdist"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu28"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Residential Pin"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/residpinet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:inputType="number"
+                android:layout_toEndOf="@id/uuu28"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -940,25 +965,25 @@
             android:layout_below="@+id/residpin"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu29"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Residential City"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/residcityet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/uuu29"
+                android:layout_marginStart="15dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -972,25 +997,26 @@
             android:layout_below="@+id/residcity"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu30"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Residential State"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu30"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"
-                android:layout_alignParentEnd="true"
                 android:background="@drawable/all_side_curved_white">
 
                 <Spinner
@@ -1011,7 +1037,7 @@
             android:layout_below="@+id/residstate"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
@@ -1022,14 +1048,15 @@
                 android:fontFamily="@font/lorin_regular"
                 android:text="Permenant Address 1"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/permenantaddrss1et"
-                android:layout_width="200dp"
-                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu31"
+                android:layout_marginStart="15dp"
+                android:layout_height="90dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -1044,25 +1071,26 @@
             android:layout_below="@+id/permenantaddrss1"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
                 android:id="@+id/uuu32"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
                 android:text="Permenant Address 2"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/permenantaddrss2et"
-                android:layout_width="200dp"
-                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu32"
+                android:layout_marginStart="15dp"
+                android:layout_height="90dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -1076,7 +1104,7 @@
             android:layout_below="@+id/permenantaddrss2"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
@@ -1087,14 +1115,14 @@
                 android:fontFamily="@font/lorin_regular"
                 android:text="Permenant District"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/permenantdistet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu33"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -1109,7 +1137,7 @@
             android:layout_below="@+id/permenantdist"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
@@ -1120,14 +1148,15 @@
                 android:fontFamily="@font/lorin_regular"
                 android:text="Permenant Pin"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/permenantpinet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu34"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:inputType="number"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -1141,7 +1170,7 @@
             android:layout_below="@+id/permenantpin"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
@@ -1152,14 +1181,14 @@
                 android:fontFamily="@font/lorin_regular"
                 android:text="Permenant City"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/permenantcityet"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu35"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
                 android:paddingStart="10dp" />
@@ -1174,7 +1203,7 @@
             android:layout_below="@+id/permenantcity"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
@@ -1185,10 +1214,12 @@
                 android:fontFamily="@font/lorin_regular"
                 android:text="Permenant State"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <RelativeLayout
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuu36"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
                 android:gravity="center"

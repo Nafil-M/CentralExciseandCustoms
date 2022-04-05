@@ -92,8 +92,8 @@ public class OfficialDetails extends AppCompatActivity {
                 permaddrstr = permaddr.getText().toString();
                 permaddr2str = permaddr2.getText().toString();
                 permdiststr = permdist.getText().toString();
-                permpinstr = residcity.getText().toString();
-                permcitystr = residcity.getText().toString();
+                permpinstr = permpin.getText().toString();
+                permcitystr = permcity.getText().toString();
 
                 if (TextUtils.isEmpty(codestr) || TextUtils.isEmpty(emailstr) || TextUtils.isEmpty(fnamestr) || TextUtils.isEmpty(mnamestr) ||
                 TextUtils.isEmpty(lnamestr) || TextUtils.isEmpty(mobilestr) || TextUtils.isEmpty(dobstr) || TextUtils.isEmpty(dojstr) ||
