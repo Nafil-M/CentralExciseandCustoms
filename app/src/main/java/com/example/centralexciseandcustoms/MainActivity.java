@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.centralexciseandcustoms.Posting.PostingActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout officer,personal,posting,training,promotion,awards;
@@ -41,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentt = new Intent(MainActivity.this,PersonalDetailssActivity.class);
                 startActivity(intentt);
+            }
+        });
+
+        posting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten = new Intent(MainActivity.this, PostingActivity.class);
+                startActivity(inten);
             }
         });
 
