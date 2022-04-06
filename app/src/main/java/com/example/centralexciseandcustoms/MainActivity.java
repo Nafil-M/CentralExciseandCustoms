@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.centralexciseandcustoms.Posting.PostingActivity;
+import com.example.centralexciseandcustoms.Promotion.PromotionActivity;
+import com.example.centralexciseandcustoms.Training.TrainingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +52,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent inten = new Intent(MainActivity.this, PostingActivity.class);
+                startActivity(inten);
+            }
+        });
+
+        training.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten = new Intent(MainActivity.this, TrainingActivity.class);
+                startActivity(inten);
+            }
+        });
+
+        promotion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten = new Intent(MainActivity.this, PromotionActivity.class);
                 startActivity(inten);
             }
         });

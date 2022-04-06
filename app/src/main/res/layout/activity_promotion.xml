@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Promotion.PromotionActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3_orders_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/lorin_bold"
+            android:text="@string/promotion"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back_icon_top_orders_driver"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back_icon_top_orders_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:onClick="onClickBack"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:clipToPadding="false"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar"
+            android:layout_marginTop="40dp">
+
+
+            <RelativeLayout
+                android:id="@+id/promotionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/uuqq"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/lorin_regular"
+                    android:text="Promotion Name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/promotionnameet"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/uuqq"
+                    android:background="@drawable/all_side_curved_white"
+                    android:fontFamily="@font/lorin_regular"
+                    android:paddingStart="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/promotiondate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/promotionname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/uuqq2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/lorin_regular"
+                    android:text="Promotion Date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/promotiondateet"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/uuqq2"
+                    android:background="@drawable/all_side_curved_white"
+                    android:fontFamily="@font/lorin_regular"
+                    android:inputType="date"
+                    android:paddingStart="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/promotionremarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/promotiondate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/uuqq3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/lorin_regular"
+                    android:text="Promotion Remarks"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/promotionremarkset"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/uuqq3"
+                    android:background="@drawable/all_side_curved_white"
+                    android:fontFamily="@font/lorin_regular"
+                    android:paddingStart="10dp" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/uploadtraining"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/promotionremarks"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bg2"
+                android:fontFamily="@font/lorin_bold"
+                android:gravity="center"
+                android:text="@string/update"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>
