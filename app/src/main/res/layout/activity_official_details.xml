@@ -1251,7 +1251,7 @@
         android:background="@drawable/bg2"
         android:fontFamily="@font/lorin_bold"
         android:gravity="center"
-        android:text="UPDATE"
+        android:text="@string/update"
         android:layout_marginBottom="25dp"
         android:textColor="@color/white" />
 

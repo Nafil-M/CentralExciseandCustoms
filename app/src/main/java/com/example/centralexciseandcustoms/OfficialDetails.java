@@ -95,7 +95,7 @@ public class OfficialDetails extends AppCompatActivity {
                 permpinstr = permpin.getText().toString();
                 permcitystr = permcity.getText().toString();
 
-                if (TextUtils.isEmpty(codestr) || TextUtils.isEmpty(emailstr) || TextUtils.isEmpty(fnamestr) || TextUtils.isEmpty(mnamestr) ||
+                if (TextUtils.isEmpty(codestr) || TextUtils.isEmpty(emailstr) || TextUtils.isEmpty(fnamestr) ||
                 TextUtils.isEmpty(lnamestr) || TextUtils.isEmpty(mobilestr) || TextUtils.isEmpty(dobstr) || TextUtils.isEmpty(dojstr) ||
                         TextUtils.isEmpty(dorstr) || TextUtils.isEmpty(educationstr) || TextUtils.isEmpty(workexpstr) || TextUtils.isEmpty(hometownstr) ||
                         TextUtils.isEmpty(homediststr) || TextUtils.isEmpty(residaddrstr) || TextUtils.isEmpty(residaddr2str) || TextUtils.isEmpty(residdiststr)
@@ -103,6 +103,10 @@ public class OfficialDetails extends AppCompatActivity {
                         || TextUtils.isEmpty(permdiststr) || TextUtils.isEmpty(permpinstr) || TextUtils.isEmpty(permcitystr) ) {
 
                     Toast.makeText(OfficialDetails.this, "All Fields are Important", Toast.LENGTH_SHORT).show();
+                }else if(mobilestr.length() != 10 ){
+                    Toast.makeText(OfficialDetails.this, "Invalid Mobile Number", Toast.LENGTH_SHORT).show();
+                }else if(residpin.length() != 6 || permpin.length() !=6){
+                    Toast.makeText(OfficialDetails.this, "Invalid Pin", Toast.LENGTH_SHORT).show();
                 }
                 else {
 

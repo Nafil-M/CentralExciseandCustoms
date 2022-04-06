@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CentralExciseAndCustoms">
         <activity
+            android:name=".Posting.PostingActivity"
+            android:exported="false" />
+        <activity
             android:name=".PersonalDetailssActivity"
             android:exported="false" />
         <activity
