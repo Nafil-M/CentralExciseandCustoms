@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         promotion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inten = new Intent(MainActivity.this, PromotionActivity.class);
-                startActivity(inten);
+                Intent intenttttt = new Intent(MainActivity.this, PromotionActivity.class);
+                startActivity(intenttttt);
             }
         });
 

@@ -52,6 +52,11 @@ public class TrainingActivity extends AppCompatActivity {
 
                     Toast.makeText(TrainingActivity.this, "Uploaded Succesfully..!", Toast.LENGTH_SHORT).show();
 
+                    trainingname.setText("");
+                    trainingfromdate.setText("");
+                    trainingenddate.setText("");
+                    trainingorg.setText("");
+                    trainingloc.setText("");
 
                 }
 
