@@ -11,6 +11,5 @@
     <string name="training">TRAINING</string>
     <string name="promotion">PROMOTION</string>
     <string name="awards">AWARDS</string>
-    <string name="posting">POSTING</string>
-    <string name="update">UPDATE</string>
+    <string name="update">UPLOAD</string>
 </resources>
