@@ -65,4 +65,7 @@ public class TrainingActivity extends AppCompatActivity {
 
 
     }
+    public void onClickBack(View view) {
+        finish();
+    }
 }

@@ -60,217 +60,150 @@
         android:layout_marginTop="30dp"
         android:id="@+id/ggg">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/ivProfileImage"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_person_black_24dp" />
-
         <RelativeLayout
-            android:id="@+id/usernamelyt"
+            android:id="@+id/maritalstatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ivProfileImage"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
-                android:id="@+id/uuu"
-                android:layout_width="wrap_content"
+                android:id="@+id/uuf10"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
-                android:text="Name"
+                android:text="Marital Status"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/edittextt"
-                android:layout_width="200dp"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuf10"
+                android:layout_marginStart="15dp"
                 android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="30dp"
-                android:background="@drawable/all_side_curved_white"
-                android:fontFamily="@font/lorin_regular"
-                android:paddingStart="10dp"
-                android:singleLine="true" />
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/all_side_curved_white">
 
+                <Spinner
+                    android:id="@+id/spinnermaritalstat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" />
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/rAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/usernamelyt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp">
 
-        <TextView
-            android:id="@+id/uuu2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/lorin_regular"
-            android:text="Residential Address"
-            android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/edittextt2"
-            android:layout_width="200dp"
-            android:layout_height="80dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
-            android:background="@drawable/all_side_curved_white"
-            android:fontFamily="@font/lorin_regular"
-            android:paddingStart="10dp" />
 
-    </RelativeLayout>
+
 
         <RelativeLayout
-            android:id="@+id/pAddress"
+            android:id="@+id/spouseemployed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rAddress"
+            android:layout_below="@+id/maritalstatus"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp">
 
             <TextView
-                android:id="@+id/uuuu2"
-                android:layout_width="100dp"
+                android:id="@+id/uuf11"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
-                android:text="Permenant Address"
+                android:text="Spouse Employed"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/edittextt22"
-                android:layout_width="200dp"
-                android:layout_height="80dp"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@id/uuf11"
+                android:layout_marginStart="15dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
+                android:background="@drawable/all_side_curved_white">
+
+                <Spinner
+                    android:id="@+id/spinnerspouseemployed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/spouseemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spouseemployed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuf"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Spouse Employement"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/spouseempet"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/uuf"
                 android:background="@drawable/all_side_curved_white"
                 android:fontFamily="@font/lorin_regular"
+                android:inputType="date"
                 android:paddingStart="10dp" />
 
         </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/mobileee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pAddress"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp">
 
-        <TextView
-            android:id="@+id/uuu3"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/lorin_regular"
-            android:text="Mobile"
-            android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/edittext3"
-            android:layout_width="200dp"
-            android:layout_height="45dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
-            android:background="@drawable/all_side_curved_white"
-            android:fontFamily="@font/lorin_regular"
-            android:inputType="number"
-            android:paddingStart="10dp" />
 
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/dob"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_below="@+id/mobileee"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true">
 
-        <TextView
-            android:id="@+id/uuu4"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/lorin_regular"
-            android:text="DOB"
-            android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/edittext4"
-            android:layout_width="200dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="30dp"
-            android:layout_alignParentEnd="true"
-            android:background="@drawable/all_side_curved_white"
-            android:fontFamily="@font/lorin_regular"
-            android:paddingStart="10dp" />
 
-    </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/dob"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp">
-
-            <TextView
-                android:id="@+id/uuu5"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/lorin_regular"
-                android:text="E Mail"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/edittext5"
-                android:layout_width="200dp"
-                android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="30dp"
-                android:background="@drawable/all_side_curved_white"
-                android:fontFamily="@font/lorin_regular"
-                android:paddingStart="10dp" />
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-    </androidx.core.widget.NestedScrollView>
 
     <TextView
         android:id="@+id/uploadpersonal"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/btn_background"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/spouseemp"
+        android:background="@drawable/bg2"
         android:fontFamily="@font/lorin_bold"
         android:gravity="center"
         android:text="UPLOAD"
         android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 
 

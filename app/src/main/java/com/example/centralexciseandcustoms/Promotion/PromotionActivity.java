@@ -52,4 +52,8 @@ public class PromotionActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onClickBack(View view) {
+        finish();
+    }
 }
