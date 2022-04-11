@@ -28,7 +28,7 @@ public class PersonalDetailssActivity extends AppCompatActivity {
     EditText spouseemployement;
     TextView uploadbtn;
     String strspouseemployement;
-    public String maritalstatusselect;
+    public String maritalstatusselect,spouseemployedselect;
     public static final int RESULT_LOAD_IMG = 100;
 
     @Override
@@ -73,6 +73,28 @@ public class PersonalDetailssActivity extends AppCompatActivity {
         });
 
 
+        ArrayList<String> arrayList2 = new ArrayList<>();
+        arrayList2.add("");
+        arrayList2.add("YES");
+        arrayList2.add("NO");
+        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, arrayList2);
+        arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spouseemployed.setAdapter(arrayAdapter2);
+        spouseemployed.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                spouseemployedselect = parent.getItemAtPosition(position).toString();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
 
 
         uploadbtn.setOnClickListener(new View.OnClickListener() {
@@ -84,16 +106,16 @@ public class PersonalDetailssActivity extends AppCompatActivity {
 
 
 
-                if (TextUtils.isEmpty(strspouseemployement)) {
-                    Toast.makeText(PersonalDetailssActivity.this, "All Fields are Important", Toast.LENGTH_SHORT).show();
-                }
-                else {
+//                if (TextUtils.isEmpty(strspouseemployement)) {
+//                    Toast.makeText(PersonalDetailssActivity.this, "All Fields are Important", Toast.LENGTH_SHORT).show();
+//                }
+//                else {
 
                     Toast.makeText(PersonalDetailssActivity.this, "Uploaded Succesfully..!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(PersonalDetailssActivity.this,MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
-                }
+//                }
 
 
             }
