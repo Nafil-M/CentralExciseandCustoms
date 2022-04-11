@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Promotion.PromotionActivity">
-
+    tools:context=".Awards.AwardsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appbar"
@@ -23,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:fontFamily="@font/lorin_bold"
-            android:text="@string/promotion"
+            android:text="@string/awards"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -61,97 +60,130 @@
             android:layout_marginTop="40dp">
 
 
+    <RelativeLayout
+        android:id="@+id/awardname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/uuqq"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lorin_regular"
+            android:text="Award Name"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/awardnameet"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/uuqq"
+            android:background="@drawable/all_side_curved_white"
+            android:fontFamily="@font/lorin_regular"
+            android:paddingStart="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/awarddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/awardname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/uuqq2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lorin_regular"
+            android:text="Award Date"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/awarddateet"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/uuqq2"
+            android:background="@drawable/all_side_curved_white"
+            android:fontFamily="@font/lorin_regular"
+            android:inputType="date"
+            android:paddingStart="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/awardorganisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/awarddate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/uuqq3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lorin_regular"
+            android:text="Award Organisation"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/awardorganisationet"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/uuqq3"
+            android:background="@drawable/all_side_curved_white"
+            android:fontFamily="@font/lorin_regular"
+            android:paddingStart="10dp" />
+
+    </RelativeLayout>
+
+
             <RelativeLayout
-                android:id="@+id/promotionname"
+                android:id="@+id/awardremarks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp">
-
-                <TextView
-                    android:id="@+id/uuqq"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/lorin_regular"
-                    android:text="Promotion Name"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/promotionnameet"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_toEndOf="@id/uuqq"
-                    android:background="@drawable/all_side_curved_white"
-                    android:fontFamily="@font/lorin_regular"
-                    android:paddingStart="10dp" />
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/promotiondate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/promotionname"
+                android:layout_below="@id/awardorganisation"
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp">
 
                 <TextView
-                    android:id="@+id/uuqq2"
+                    android:id="@+id/uuqq4"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/lorin_regular"
-                    android:text="Promotion Date"
+                    android:text="Award Remarks"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
                 <EditText
-                    android:id="@+id/promotiondateet"
+                    android:id="@+id/awardsremarkset"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_marginStart="15dp"
-                    android:layout_toEndOf="@id/uuqq2"
-                    android:background="@drawable/all_side_curved_white"
-                    android:fontFamily="@font/lorin_regular"
-                    android:inputType="date"
-                    android:paddingStart="10dp" />
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/promotionremarks"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/promotiondate"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="10dp">
-
-                <TextView
-                    android:id="@+id/uuqq3"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/lorin_regular"
-                    android:text="Promotion Remarks"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/promotionremarkset"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_toEndOf="@id/uuqq3"
+                    android:layout_toEndOf="@id/uuqq4"
                     android:background="@drawable/all_side_curved_white"
                     android:fontFamily="@font/lorin_regular"
                     android:paddingStart="10dp" />
@@ -160,10 +192,10 @@
 
 
             <TextView
-                android:id="@+id/uploadpromotion"
+                android:id="@+id/uploadawards"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_below="@id/promotionremarks"
+                android:layout_below="@id/awardremarks"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="25dp"
@@ -176,7 +208,5 @@
         </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
-
-
 
 </RelativeLayout>

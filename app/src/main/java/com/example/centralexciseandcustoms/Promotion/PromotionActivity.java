@@ -30,6 +30,8 @@ public class PromotionActivity extends AppCompatActivity {
         promodate = findViewById(R.id.promotiondateet);
         promoremarks = findViewById(R.id.promotionremarkset);
 
+        update = findViewById(R.id.uploadpromotion);
+
 
         update.setOnClickListener(new View.OnClickListener() {
             @Override

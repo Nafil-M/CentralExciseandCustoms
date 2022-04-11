@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.centralexciseandcustoms.Awards.AwardsActivity;
 import com.example.centralexciseandcustoms.Posting.PostingActivity;
 import com.example.centralexciseandcustoms.Promotion.PromotionActivity;
 import com.example.centralexciseandcustoms.Training.TrainingActivity;
@@ -59,16 +60,24 @@ public class MainActivity extends AppCompatActivity {
         training.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inten = new Intent(MainActivity.this, TrainingActivity.class);
-                startActivity(inten);
+                Intent intent5 = new Intent(MainActivity.this, TrainingActivity.class);
+                startActivity(intent5);
             }
         });
 
         promotion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intenttttt = new Intent(MainActivity.this, PromotionActivity.class);
-                startActivity(intenttttt);
+                Intent intent6 = new Intent(MainActivity.this, PromotionActivity.class);
+                startActivity(intent6);
+            }
+        });
+
+        awards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent6 = new Intent(MainActivity.this, AwardsActivity.class);
+                startActivity(intent6);
             }
         });
 
