@@ -106,10 +106,48 @@
 
 
         <RelativeLayout
-            android:id="@+id/spouseemployed"
+            android:id="@+id/spousename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/maritalstatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/uuf23"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Spouse Name"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/spousenameet"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/uuf23"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:inputType="date"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/spouseemployed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spousename"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
@@ -121,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
-                android:text="Spouse Employed"
+                android:text="Spouse Occupation"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -148,7 +186,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/spouseemp"
+            android:id="@+id/childname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/spouseemployed"
@@ -163,12 +201,12 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/lorin_regular"
-                android:text="Spouse Employement"
+                android:text="Child Name"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/spouseempet"
+                android:id="@+id/childnameet"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginStart="15dp"
@@ -182,10 +220,18 @@
 
 
 
-
-
-
-
+        <TextView
+            android:id="@+id/editt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/childname"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg2"
+            android:fontFamily="@font/lorin_bold"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/white" />
 
 
 
@@ -193,8 +239,8 @@
         android:id="@+id/uploadpersonal"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_below="@id/spouseemp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editt"
         android:background="@drawable/bg2"
         android:fontFamily="@font/lorin_bold"
         android:gravity="center"

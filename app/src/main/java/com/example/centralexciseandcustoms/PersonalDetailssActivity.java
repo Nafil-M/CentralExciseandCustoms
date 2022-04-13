@@ -25,11 +25,10 @@ import java.util.ArrayList;
 public class PersonalDetailssActivity extends AppCompatActivity {
 
     Spinner maritalstatus,spouseemployed;
-    EditText spouseemployement;
-    TextView uploadbtn;
-    String strspouseemployement;
+    EditText spousename,childname;
+    TextView uploadbtn,edit;
+
     public String maritalstatusselect,spouseemployedselect;
-    public static final int RESULT_LOAD_IMG = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +37,26 @@ public class PersonalDetailssActivity extends AppCompatActivity {
 
         maritalstatus = findViewById(R.id.spinnermaritalstat);
         spouseemployed = findViewById(R.id.spinnerspouseemployed);
-        spouseemployement = findViewById(R.id.spouseempet);
+        spousename = findViewById(R.id.spousenameet);
+        childname = findViewById(R.id.childnameet);
+        edit = findViewById(R.id.editt);
+
         uploadbtn = findViewById(R.id.uploadpersonal);
 
+        uploadbtn.setEnabled(false);
+
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                uploadbtn.setEnabled(true);
+
+            }
+        });
 
         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("MARRIED");
         arrayList.add("SINGLE");
-        arrayList.add("SEPERATED");
+        arrayList.add("MARRIED");
         arrayList.add("DIVORCED");
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,                         android.R.layout.simple_spinner_item, arrayList);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -55,16 +66,14 @@ public class PersonalDetailssActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 maritalstatusselect = parent.getItemAtPosition(position).toString();
 
-                if (maritalstatusselect.equals("SINGLE") || maritalstatusselect.equals("SEPERATED") || maritalstatusselect.equals("DIVORCED") ){
+                if (maritalstatusselect.equals("SINGLE") || maritalstatusselect.equals("DIVORCED") ){
                     spouseemployed.setEnabled(false);
-                    spouseemployed.setClickable(false);
-
-                    spouseemployement.setEnabled(false);
+                    spousename.setEnabled(false);
+                    childname.setEnabled(false);
                 }else {
                     spouseemployed.setEnabled(true);
-                    spouseemployed.setClickable(true);
-
-                    spouseemployement.setEnabled(true);
+                    spousename.setEnabled(true);
+                    childname.setEnabled(true);
                 }
             }
             @Override
@@ -74,9 +83,9 @@ public class PersonalDetailssActivity extends AppCompatActivity {
 
 
         ArrayList<String> arrayList2 = new ArrayList<>();
-        arrayList2.add("");
-        arrayList2.add("YES");
-        arrayList2.add("NO");
+        arrayList2.add("GOVERNMENT");
+        arrayList2.add("PRIVATE");
+        arrayList2.add("HOME MAKER");
         ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, arrayList2);
         arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spouseemployed.setAdapter(arrayAdapter2);
@@ -94,29 +103,14 @@ public class PersonalDetailssActivity extends AppCompatActivity {
             }
         });
 
-
-
-
         uploadbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                strspouseemployement = spouseemployement.getText().toString();
-
-
-
-//                if (TextUtils.isEmpty(strspouseemployement)) {
-//                    Toast.makeText(PersonalDetailssActivity.this, "All Fields are Important", Toast.LENGTH_SHORT).show();
-//                }
-//                else {
 
                     Toast.makeText(PersonalDetailssActivity.this, "Uploaded Succesfully..!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(PersonalDetailssActivity.this,MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
-//                }
-
 
             }
         });
