@@ -234,7 +234,6 @@
             android:textColor="@color/white" />
 
 
-
     <TextView
         android:id="@+id/uploadpersonal"
         android:layout_width="match_parent"
