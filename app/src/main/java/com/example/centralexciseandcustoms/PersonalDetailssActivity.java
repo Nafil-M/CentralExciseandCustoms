@@ -90,12 +90,12 @@ public class PersonalDetailssActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                uploadbtn.setEnabled(true);
-                addmore.setEnabled(true);
+//                uploadbtn.setEnabled(true);
+//                addmore.setEnabled(true);
                 maritalstatus.setEnabled(true);
-                spouseemployed.setEnabled(true);
-                spousename.setEnabled(true);
-                childname.setEnabled(true);
+//                spouseemployed.setEnabled(true);
+//                spousename.setEnabled(true);
+//                childname.setEnabled(true);
 
             }
         });
