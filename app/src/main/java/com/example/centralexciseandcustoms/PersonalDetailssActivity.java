@@ -90,8 +90,8 @@ public class PersonalDetailssActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-//                uploadbtn.setEnabled(true);
-//                addmore.setEnabled(true);
+                uploadbtn.setEnabled(true);
+                addmore.setEnabled(true);
                 maritalstatus.setEnabled(true);
 //                spouseemployed.setEnabled(true);
 //                spousename.setEnabled(true);
@@ -120,6 +120,86 @@ public class PersonalDetailssActivity extends AppCompatActivity {
                     spouseemployed.setEnabled(true);
                     spousename.setEnabled(true);
                     childname.setEnabled(true);
+
+                    addmore.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+//                createEditTextView();
+                            hint++;
+
+                            if (hint == 1){
+                                child1.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 2){
+                                child2.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 3){
+                                child3.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 4){
+                                child4.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 5){
+                                child5.setVisibility(View.VISIBLE);
+                            }
+
+                            if (hint == 6){
+                                child6.setVisibility(View.VISIBLE);
+                            }
+
+                            if (hint == 7){
+                                child7.setVisibility(View.VISIBLE);
+                            }
+
+                            if (hint == 8){
+                                child8.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 9){
+                                child9.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 10){
+                                child10.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 11){
+                                child11.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 12){
+                                child12.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 13){
+                                child13.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 14){
+                                child14.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 15){
+                                child15.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 16){
+                                child16.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 17){
+                                child17.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 18){
+                                child18.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 19){
+                                child19.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 20){
+                                child20.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 21){
+                                child21.setVisibility(View.VISIBLE);
+                            }
+                            if (hint == 22){
+                                child22.setVisibility(View.VISIBLE);
+                            }
+
+                        }
+                    });
+
                 }
             }
             @Override
@@ -149,84 +229,7 @@ public class PersonalDetailssActivity extends AppCompatActivity {
             }
         });
 
-        addmore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                createEditTextView();
-                hint++;
 
-                if (hint == 1){
-                    child1.setVisibility(View.VISIBLE);
-                }
-                if (hint == 2){
-                    child2.setVisibility(View.VISIBLE);
-                }
-                if (hint == 3){
-                    child3.setVisibility(View.VISIBLE);
-                }
-                if (hint == 4){
-                    child4.setVisibility(View.VISIBLE);
-                }
-                if (hint == 5){
-                    child5.setVisibility(View.VISIBLE);
-                }
-
-                if (hint == 6){
-                    child6.setVisibility(View.VISIBLE);
-                }
-
-                if (hint == 7){
-                    child7.setVisibility(View.VISIBLE);
-                }
-
-                if (hint == 8){
-                    child8.setVisibility(View.VISIBLE);
-                }
-                if (hint == 9){
-                    child9.setVisibility(View.VISIBLE);
-                }
-                if (hint == 10){
-                    child10.setVisibility(View.VISIBLE);
-                }
-                if (hint == 11){
-                    child11.setVisibility(View.VISIBLE);
-                }
-                if (hint == 12){
-                    child12.setVisibility(View.VISIBLE);
-                }
-                if (hint == 13){
-                    child13.setVisibility(View.VISIBLE);
-                }
-                if (hint == 14){
-                    child14.setVisibility(View.VISIBLE);
-                }
-                if (hint == 15){
-                    child15.setVisibility(View.VISIBLE);
-                }
-                if (hint == 16){
-                    child16.setVisibility(View.VISIBLE);
-                }
-                if (hint == 17){
-                    child17.setVisibility(View.VISIBLE);
-                }
-                if (hint == 18){
-                    child18.setVisibility(View.VISIBLE);
-                }
-                if (hint == 19){
-                    child19.setVisibility(View.VISIBLE);
-                }
-                if (hint == 20){
-                    child20.setVisibility(View.VISIBLE);
-                }
-                if (hint == 21){
-                    child21.setVisibility(View.VISIBLE);
-                }
-                if (hint == 22){
-                    child22.setVisibility(View.VISIBLE);
-                }
-
-            }
-        });
 
         uploadbtn.setOnClickListener(new View.OnClickListener() {
             @Override
